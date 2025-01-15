@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chat Page">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/Chat.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+<nav>
+    <div class="BGULogo">
+        <a href="https://www.bgu.ac.il/">
+            <img src="../imgs/logo_Desktop.png" alt="BGU Logo"/>
+        </a>
+    </div>
+    <div class="user-controls">
+        <img src="../imgs/Student Profile.jpg" alt="User Profile">
+        <button class="signout-btn">Sign Out</button>
+    </div>
+</nav>
+<main class="container">
+    <!-- Chat container -->
+    <h1 class="title-heading">Let's Learn Together</h1>
+    <h1 class="second-title-heading">ask me anything!</h1>
+
+
+    <section class="chat-list">
+    </section>
+
+    <!-- Typing container -->
+    <section class="typing-area">
+        <div class="content-wrapper">
+
+            <!-- Typing textarea content -->
+            <div class="typing-content">
+                <div class="typing-input">
+                    <textarea spellcheck="false" placeholder="Send a message" required></textarea>
+                    <span id="send-btn" class="icon material-symbols-rounded">Send</span>
+                </div>
+                <div class="typing-controls">
+                    <span id="delete-btn" class="icon material-symbols-rounded">delete</span>
+                </div>
+            </div>
+
+            <!-- Bottom disclaimer text -->
+            <footer class="disclaimer">
+                Bengoo is based on ChatGPT API, this is a prototype for final project in BGU University.
+                <a href="https://www.linkedin.com/in/ron-zeevi/" rel="noreferrer"
+                   target="_blank">Contact us</a>
+            </footer>
+        </div>
+    </section>
+</main>
+
+</body>
+<script type="module" src="../js/Chat.js" defer></script>
+</html>
